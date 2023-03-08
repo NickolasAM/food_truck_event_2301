@@ -31,7 +31,6 @@ class Event
         if food_trucks_selling_item.length > 1 && total_quantity > 50
           overstocked_items << item unless overstocked_items.include?(item)
         end
-        # require'pry';binding.pry
       end
     end
     overstocked_items
@@ -42,7 +41,6 @@ class Event
       food_truck.inventory.keys.map(&:name)
     end
     items.uniq.sort
-    # require'pry';binding.pry
   end
 
   def total_inventory
@@ -52,7 +50,6 @@ class Event
         n_inventory[item] ||= { quantity: 0, food_trucks: []}
         n_inventory[item][:quantity] += quantity
         n_inventory[item][:food_trucks] << food_truck
-        # require'pry';binding.pry
       end
     end
     n_inventory

@@ -22,5 +22,3 @@ class FoodTruck
     p_rev
   end
 end
-
-# require'pry';binding.pry
