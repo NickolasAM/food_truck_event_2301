@@ -14,6 +14,13 @@ class FoodTruck
     @inventory[item] += quantity
   end
 
-  
+  def potential_revenue
+    p_rev = 0
+    @inventory.each do |item, quantity|
+      p_rev += item.price * quantity
+    end
+    p_rev
+  end
 end
+
 # require'pry';binding.pry
