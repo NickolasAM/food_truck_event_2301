@@ -36,4 +36,11 @@ class Event
     end
     overstocked_items
   end 
+
+  def sorted_item_list
+    items = @food_trucks.flat_map do |food_truck|
+      food_truck.inventory.keys.map(&:name)
+    end
+    items.uniq.sort
+  end
 end

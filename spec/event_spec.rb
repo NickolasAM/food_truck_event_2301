@@ -119,8 +119,6 @@ RSpec.describe Event do
       event.add_food_truck(food_truck3)
 
       expect(event.sorted_item_list).to eq(['Apple Pie (Slice)', "Banana Nice Cream", 'Peach Pie (Slice)', "Peach-Raspberry Nice Cream"])
-
-
     end
   end
 end
