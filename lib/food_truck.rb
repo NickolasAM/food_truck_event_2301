@@ -10,6 +10,8 @@ class FoodTruck
     @inventory[item]
   end
 
-  
+  def stock(item, quantity)
+    @inventory[item] += quantity
+    require'pry';binding.pry
+  end
 end
-# require'pry';binding.pry
