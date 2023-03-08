@@ -5,4 +5,6 @@ class Event
     @name = name
     @food_trucks = []
   end
+
+  
 end
