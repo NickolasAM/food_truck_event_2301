@@ -9,5 +9,7 @@ class FoodTruck
   def check_stock(item)
     @inventory[item]
   end
+
+  
 end
 # require'pry';binding.pry
