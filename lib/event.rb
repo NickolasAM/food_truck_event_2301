@@ -21,5 +21,6 @@ class Event
       food_truck.inventory.has_key?(item)
     end
   end
+
   # require'pry';binding.pry
 end
