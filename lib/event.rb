@@ -42,5 +42,9 @@ class Event
       food_truck.inventory.keys.map(&:name)
     end
     items.uniq.sort
+    # require'pry';binding.pry
+
   end
+
+
 end
