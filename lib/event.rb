@@ -43,8 +43,18 @@ class Event
     end
     items.uniq.sort
     # require'pry';binding.pry
-
   end
 
-
+  def total_inventory
+    n_inventory = {}
+    @food_trucks.each do |food_truck|
+      food_truck.inventory.each do |item, quantity|
+        n_inventory[item] ||= { quantity: 0, food_trucks: []}
+        n_inventory[item][:quantity] += quantity
+        n_inventory[item][:food_trucks] << food_truck
+        # require'pry';binding.pry
+      end
+    end
+    n_inventory
+  end
 end
